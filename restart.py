@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import time
 import os
 time.sleep(3)
