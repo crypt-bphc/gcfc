@@ -119,6 +119,7 @@ def main():
     load_handlers(updater.dispatcher)
 
     updater.start_polling()
+    print(updater)
     updater.bot.send_message(chat_id=config.USER_IDS[0], text='Hello Arihant ! \nWhat do you wanna copy today?')
     updater.idle()
 
