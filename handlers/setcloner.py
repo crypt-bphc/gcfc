@@ -30,7 +30,7 @@ def gclone(update, context):
     update.message.reply_text('Succesfully Set to gclone !')
     gclonerpath = homedirpath+'/restart.py'
     runpath = ['python3', gclonerpath ]
-    subprocess.Popen(runpath)
+    os.system('${GITHUB_WORKSPACE}/restart.py')
     print ("Restarting...")
     os._exit(0)                                      
 @restricted
