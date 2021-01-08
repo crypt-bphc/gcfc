@@ -32,7 +32,7 @@ def gclone(update, context):
     runpath = ['python3', gclonerpath ]
     os.system('${GITHUB_WORKSPACE}/restart.py')
     print ("Restarting...")
-    os._exit(0)                                      
+    os.kill(0)                                      
 @restricted
 def fclone(update, context):
     homedirpath = dirname(dirname(abspath(__file__)))
