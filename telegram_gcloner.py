@@ -121,6 +121,8 @@ def main():
     updater.start_polling()
     updater.bot.send_message(chat_id=config.USER_IDS[0], text='Hello Arihant ! \nWhat do you wanna copy today?')
     updater.idle()
+    while True :
+        Continue
 
 
 def init_logger():
