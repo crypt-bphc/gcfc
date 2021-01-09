@@ -16,3 +16,5 @@ jobs:
     - name: Install build dependencies
       run: |
         pwd
+        cd ${GITHUB_WORKSPACE}
+        pwd
